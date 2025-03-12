@@ -2,15 +2,8 @@
 
 public struct Color
 {
-    public float R, G, B;
+    public float R = r, G = g, B = b;
 
-    public Color(float r, float g, float b)
-    {
-        this.R = r;
-        this.G = g;
-        this.B = b;
-    }
-    
     // Add two colors
     public static Color operator +(Color c1, Color c2) {
         return new Color(c1.R + c2.R, c1.G + c2.G, c1.B + c2.B);
